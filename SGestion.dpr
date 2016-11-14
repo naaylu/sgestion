@@ -5,7 +5,15 @@ uses
   ufrmMain in 'ufrmMain.pas' {frmMain},
   udmBase in 'udmBase.pas' {dmBase: TDataModule},
   ufrmCatalogo in 'Compartidos\ufrmCatalogo.pas' {frmCatalogo},
+  ufrmFamilias in 'Catalogos\ufrmFamilias.pas' {frmFamilias},
+  ufrmBancos in 'Catalogos\ufrmBancos.pas' {frmBancos},
+  ufrmProductos in 'Catalogos\ufrmProductos.pas' {frmProductos},
   udmDatos in 'Compartidos\udmDatos.pas' {dmDatos: TDataModule},
+  ufrmPresupuestos in 'Operaciones\ufrmPresupuestos.pas' {frmPresupuestos},
+  udmFamilias in 'CatalogosDatos\udmFamilias.pas' {dmFamilias: TDataModule},
+  udmBancos in 'CatalogosDatos\udmBancos.pas' {dmBancos: TDataModule},
+  udmProductos in 'CatalogosDatos\udmProductos.pas' {dmProductos: TDataModule},
+  udmPresupuestos in 'OperacionesDatos\udmPresupuestos.pas' {dmPresupuestos: TDataModule},
   udmDetalles in 'Compartidos\udmDetalles.pas' {dmDetalles: TDataModule},
   ufrmOperacion in 'Compartidos\ufrmOperacion.pas' {frmOperacion};
 

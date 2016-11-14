@@ -11,13 +11,21 @@ uses
 type
   TfrmMain = class(TForm)
     actMain: TActionList;
+    actFamilias: TAction;
     pcMain: TPageControl;
     tbMain: TToolBar;
     btnCatalogos: TToolButton;
     mnuCatalogos: TPopupMenu;
+    mnuFamilias: TMenuItem;
     imgMain: TImageList;
+    actBancos: TAction;
+    mnuBancos: TMenuItem;
+    actPresupuestos: TAction;
     btnOperaciones: TToolButton;
     mnuOperaciones: TPopupMenu;
+    mnuPresupuestos: TMenuItem;
+    actProductos: TAction;
+    mnuProductos: TMenuItem;
     btnClose: TBitBtn;
     actClose: TAction;
     procedure actExecute(Sender: TObject);

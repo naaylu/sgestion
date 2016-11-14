@@ -221,9 +221,22 @@ inherited dmPresupuestos: TdmPresupuestos
     end
   end
   inherited qryDetalles: TZQuery
-    Active = True
     SQL.Strings = (
-      'select * from presupuestos_datos')
+      
+        'select * from presupuestos_datos where id_presupuestos = :id_pre' +
+        'supuestos')
+    Params = <
+      item
+        DataType = ftUnknown
+        Name = 'id_presupuestos'
+        ParamType = ptUnknown
+      end>
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'id_presupuestos'
+        ParamType = ptUnknown
+      end>
   end
   object dsProductos: TDataSource
     DataSet = cdsProductos

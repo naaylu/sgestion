@@ -32,7 +32,6 @@ type
     procedure FormCreate(Sender: TObject);
     procedure actCloseUpdate(Sender: TObject);
     procedure actCloseExecute(Sender: TObject);
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
     function CrearVentana(actAccion: TAction):  TForm;
@@ -68,14 +67,6 @@ begin
       Result.Parent:= pcMain.ActivePage;
     end;
   end;
-end;
-
-procedure TfrmMain.FormClose(Sender: TObject; var Action: TCloseAction);
-var
-  i: integer;
-begin
-  for i:= Pred(pcMain.PageCount) downto 0 do
-    pcMain.Pages[i].Free;
 end;
 
 procedure TfrmMain.FormCreate(Sender: TObject);

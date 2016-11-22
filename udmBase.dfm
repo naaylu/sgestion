@@ -9,10 +9,10 @@ object dmBase: TdmBase
     Catalog = ''
     HostName = ''
     Port = 0
-    Database = ''
-    User = ''
-    Password = ''
-    Protocol = ''
+    Database = 'C:\AppData\SGESTION.FDB'
+    User = 'SYSDBA'
+    Password = 'masterkey'
+    Protocol = 'firebird-3.0'
     Left = 24
     Top = 8
   end

@@ -15,7 +15,11 @@ uses
   ufrmFamilias in 'Catalogos\ufrmFamilias.pas' {frmFamilias},
   udmBancos in 'CatalogosDatos\udmBancos.pas' {dmBancos: TDataModule},
   udmFamilias in 'CatalogosDatos\udmFamilias.pas' {dmFamilias: TDataModule},
-  udmBase in 'udmBase.pas' {dmBase: TDataModule};
+  udmBase in 'udmBase.pas' {dmBase: TDataModule},
+  uTestCasesUsuarios in 'Test\uTestCasesUsuarios.pas',
+  uTestCaseClientes in 'Test\uTestCaseClientes.pas',
+  udmUsuarios in 'udmUsuarios.pas' {dmUsuarios: TDataModule},
+  ufrmUsuarios in 'ufrmUsuarios.pas' {frmUsuarios};
 
 {$R *.res}
 

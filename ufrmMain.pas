@@ -30,6 +30,8 @@ type
     actClose: TAction;
     actUsuarios: TAction;
     mnuUsuarios: TMenuItem;
+    actClientes: TAction;
+    mnuClientes: TMenuItem;
     procedure actExecute(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure actCloseUpdate(Sender: TObject);

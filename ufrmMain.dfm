@@ -29,7 +29,6 @@ object frmMain: TfrmMain
     Height = 513
     Align = alClient
     TabOrder = 0
-    ExplicitTop = 0
   end
   object tbMain: TToolBar
     Left = 0
@@ -90,6 +89,9 @@ object frmMain: TfrmMain
     object actUsuarios: TAction
       Caption = 'actUsuarios'
     end
+    object actClientes: TAction
+      Caption = 'actClientes'
+    end
   end
   object mnuCatalogos: TPopupMenu
     Images = imgMain
@@ -108,6 +110,10 @@ object frmMain: TfrmMain
       Action = actUsuarios
       Caption = 'Usuarios'
     end
+    object mnuClientes: TMenuItem
+      Action = actClientes
+      Caption = 'Clientes'
+    end
   end
   object imgMain: TImageList
     ColorDepth = cd32Bit
@@ -117,7 +123,7 @@ object frmMain: TfrmMain
     Left = 240
     Top = 152
     Bitmap = {
-      494C010101000800880020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010101000800900020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000002000000001002000000000000040
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

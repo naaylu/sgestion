@@ -17,7 +17,9 @@ uses
   udmDetalles in 'Compartidos\udmDetalles.pas' {dmDetalles: TDataModule},
   ufrmOperacion in 'Compartidos\ufrmOperacion.pas' {frmOperacion},
   udmUsuarios in 'udmUsuarios.pas' {dmUsuarios: TDataModule},
-  ufrmUsuarios in 'ufrmUsuarios.pas' {frmUsuarios};
+  ufrmUsuarios in 'ufrmUsuarios.pas' {frmUsuarios},
+  udmClientes in 'CatalogosDatos\udmClientes.pas' {dmClientes: TDataModule},
+  ufrmClientes in 'Catalogos\ufrmClientes.pas' {frmClientes};
 
 {$R *.res}
 

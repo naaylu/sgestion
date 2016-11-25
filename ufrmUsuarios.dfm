@@ -4,8 +4,6 @@
   TextHeight = 13
   inherited pgcCatalogo: TPageControl
     ActivePage = tsEditor
-    ExplicitLeft = 8
-    ExplicitTop = 33
     inherited tsListado: TTabSheet
       ExplicitLeft = 4
       ExplicitTop = 24
@@ -50,8 +48,7 @@
       end
     end
     inherited tsEditor: TTabSheet
-      Enabled = False
-      ExplicitLeft = 8
+      ExplicitLeft = 4
       ExplicitTop = 24
       ExplicitWidth = 521
       ExplicitHeight = 353
@@ -66,7 +63,7 @@
         Left = 34
         Top = 40
         Width = 36
-        Height = 17
+        Height = 13
         Caption = 'Usuario'
       end
       object lblnombre: TLabel
@@ -177,9 +174,8 @@
         Left = 125
         Top = 173
         Width = 334
-        Height = 52
+        Height = 21
         TabOrder = 7
-        Text = 'edtobservacones'
       end
       object dbcbbgrupo: TDBComboBox
         Left = 125
@@ -194,7 +190,7 @@
   end
   inherited imgImagenes: TImageList
     Bitmap = {
-      494C010105000800140120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800180120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000060606074343
@@ -1259,7 +1255,7 @@
   end
   inherited imgImagenesGris: TImageList
     Bitmap = {
-      494C010105000800300120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800340120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000001010101020202037C7C7C889090

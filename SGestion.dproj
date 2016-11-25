@@ -150,6 +150,15 @@
             <Form>frmOperacion</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="udmUsuarios.pas">
+            <Form>dmUsuarios</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="ufrmUsuarios.pas">
+            <Form>frmUsuarios</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <None Include="README.md"/>
         <None Include="BD\SGestion_FireBird.sql"/>
         <None Include="BD\SGestion_MySQL.sql"/>
@@ -173,10 +182,7 @@
                 <Source>
                     <Source Name="MainSource">SGestion.dpr</Source>
                 </Source>
-                <Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k240.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp240.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
-                </Excluded_Packages>
+                <Excluded_Packages/>
             </Delphi.Personality>
             <Platforms>
                 <Platform value="Win32">True</Platform>

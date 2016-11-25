@@ -28,6 +28,8 @@ type
     mnuProductos: TMenuItem;
     btnClose: TBitBtn;
     actClose: TAction;
+    actUsuarios: TAction;
+    mnuUsuarios: TMenuItem;
     procedure actExecute(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure actCloseUpdate(Sender: TObject);

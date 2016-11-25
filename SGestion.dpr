@@ -15,7 +15,9 @@ uses
   udmProductos in 'CatalogosDatos\udmProductos.pas' {dmProductos: TDataModule},
   udmPresupuestos in 'OperacionesDatos\udmPresupuestos.pas' {dmPresupuestos: TDataModule},
   udmDetalles in 'Compartidos\udmDetalles.pas' {dmDetalles: TDataModule},
-  ufrmOperacion in 'Compartidos\ufrmOperacion.pas' {frmOperacion};
+  ufrmOperacion in 'Compartidos\ufrmOperacion.pas' {frmOperacion},
+  udmUsuarios in 'udmUsuarios.pas' {dmUsuarios: TDataModule},
+  ufrmUsuarios in 'ufrmUsuarios.pas' {frmUsuarios};
 
 {$R *.res}
 

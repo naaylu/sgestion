@@ -19,7 +19,9 @@ uses
   uTestCasesUsuarios in 'Test\uTestCasesUsuarios.pas',
   uTestCaseClientes in 'Test\uTestCaseClientes.pas',
   udmUsuarios in 'udmUsuarios.pas' {dmUsuarios: TDataModule},
-  ufrmUsuarios in 'ufrmUsuarios.pas' {frmUsuarios};
+  ufrmUsuarios in 'ufrmUsuarios.pas' {frmUsuarios},
+  ufrmClientes in 'Catalogos\ufrmClientes.pas' {frmClientes},
+  udmClientes in 'CatalogosDatos\udmClientes.pas' {dmClientes: TDataModule};
 
 {$R *.res}
 

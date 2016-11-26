@@ -41,8 +41,6 @@ type
     lblCONTACTO: TLabel;
     dbedtcontacto: TDBEdit;
     grpfacturacion: TGroupBox;
-    chkiva: TCheckBox;
-    chkre: TCheckBox;
     lbltarifa: TLabel;
     dbcbbtarifa: TDBComboBox;
     lbldes: TLabel;
@@ -54,6 +52,8 @@ type
     dbedtdpago: TDBEdit;
     lblban: TLabel;
     dbedtIBAN: TDBEdit;
+    dbchkfacturA: TDBCheckBox;
+    dbchkre: TDBCheckBox;
     procedure actInformeExecute(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);

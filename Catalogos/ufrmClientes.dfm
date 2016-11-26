@@ -57,11 +57,13 @@
             Expanded = False
             FieldName = 'PROVINCIA'
             Title.Caption = 'Provincia'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'NIF'
+            Width = 64
             Visible = True
           end
           item
@@ -74,18 +76,21 @@
             Expanded = False
             FieldName = 'TELEFONO'
             Title.Caption = 'Telefono'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'MOVIL'
             Title.Caption = 'Movil'
+            Width = 64
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'FAX'
             Title.Caption = 'Fax'
+            Width = 64
             Visible = True
           end
           item
@@ -106,6 +111,7 @@
             Expanded = False
             FieldName = 'BIC'
             Title.Caption = 'IBAN'
+            Width = 64
             Visible = True
           end
           item
@@ -125,12 +131,13 @@
           item
             Expanded = False
             FieldName = 'BIC'
+            Width = 64
             Visible = True
           end>
       end
     end
     inherited tsEditor: TTabSheet
-      ExplicitLeft = 8
+      ExplicitLeft = 4
       ExplicitTop = 24
       ExplicitWidth = 521
       ExplicitHeight = 353
@@ -291,7 +298,7 @@
       end
       object dbedtcp: TDBEdit
         Left = 32
-        Top = 133
+        Top = 131
         Width = 66
         Height = 21
         DataField = 'CODIGO_POSTAL'
@@ -371,7 +378,7 @@
         TabOrder = 12
       end
       object grpfacturacion: TGroupBox
-        Left = 3
+        Left = 13
         Top = 214
         Width = 460
         Height = 105
@@ -392,27 +399,11 @@
           Caption = 'Descuento'
         end
         object lblfdepago: TLabel
-          Left = 235
-          Top = 24
+          Left = 225
+          Top = 29
           Width = 74
           Height = 13
           Caption = 'F. de pago/ Dia'
-        end
-        object chkiva: TCheckBox
-          Left = 20
-          Top = 24
-          Width = 97
-          Height = 17
-          Caption = 'Facturar sin IVA'
-          TabOrder = 0
-        end
-        object chkre: TCheckBox
-          Left = 23
-          Top = 47
-          Width = 194
-          Height = 17
-          Caption = 'Aplicar RE(Recarga de equivalencia)'
-          TabOrder = 1
         end
         object dbcbbtarifa: TDBComboBox
           Left = 53
@@ -421,7 +412,7 @@
           Height = 21
           DataField = 'TARIFA'
           DataSource = dmClientes.dsDatos
-          TabOrder = 2
+          TabOrder = 0
         end
         object dbedtdesc: TDBEdit
           Left = 158
@@ -430,7 +421,7 @@
           Height = 21
           DataField = 'DESCUENTO'
           DataSource = dmClientes.dsDatos
-          TabOrder = 3
+          TabOrder = 1
         end
         object dbcbbfpago: TDBComboBox
           Left = 312
@@ -439,7 +430,17 @@
           Height = 21
           DataField = 'ID_FORMAS_PAGO'
           DataSource = dmClientes.dsDatos
-          TabOrder = 4
+          TabOrder = 2
+        end
+        object dbchkfacturA: TDBCheckBox
+          Left = 25
+          Top = 32
+          Width = 120
+          Height = 17
+          Caption = 'Facturacion sin Iva'
+          DataField = 'SIN_IVA'
+          DataSource = dmClientes.dsDatos
+          TabOrder = 3
         end
       end
       object dbedtbanco: TDBEdit
@@ -461,8 +462,8 @@
         TabOrder = 15
       end
       object dbcbbprov: TDBComboBox
-        Left = 140
-        Top = 233
+        Left = 136
+        Top = 160
         Width = 99
         Height = 21
         DataField = 'PROVINCIA'
@@ -470,28 +471,38 @@
         TabOrder = 16
       end
       object dbcbbpais: TDBComboBox
-        Left = 42
-        Top = 233
+        Left = 38
+        Top = 155
         Width = 60
         Height = 21
         DataField = 'PAIS'
         DataSource = dmClientes.dsDatos
         TabOrder = 17
       end
+      object dbchkre: TDBCheckBox
+        Left = 38
+        Top = 269
+        Width = 97
+        Height = 17
+        Caption = 'RE'
+        DataField = 'CON_RE'
+        DataSource = dmClientes.dsDatos
+        TabOrder = 18
+      end
+      object dbedtdpago: TDBEdit
+        Left = 404
+        Top = 238
+        Width = 66
+        Height = 21
+        DataField = 'DIAPAGO'
+        DataSource = dmClientes.dsDatos
+        TabOrder = 19
+      end
     end
-  end
-  object dbedtdpago: TDBEdit [2]
-    Left = 398
-    Top = 311
-    Width = 66
-    Height = 21
-    DataField = 'DIAPAGO'
-    DataSource = dmClientes.dsDatos
-    TabOrder = 2
   end
   inherited imgImagenes: TImageList
     Bitmap = {
-      494C010105000800140120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C0101050008001C0120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000060606074343
@@ -1556,7 +1567,7 @@
   end
   inherited imgImagenesGris: TImageList
     Bitmap = {
-      494C010105000800300120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800380120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000001010101020202037C7C7C889090

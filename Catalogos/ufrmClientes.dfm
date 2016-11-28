@@ -1,5 +1,6 @@
 ﻿inherited frmClientes: TfrmClientes
   Caption = 'Clientes'
+  ExplicitTop = -64
   PixelsPerInch = 96
   TextHeight = 13
   inherited pgcCatalogo: TPageControl
@@ -141,13 +142,6 @@
       ExplicitTop = 24
       ExplicitWidth = 521
       ExplicitHeight = 353
-      object lblcodigo: TLabel
-        Left = 9
-        Top = 16
-        Width = 33
-        Height = 13
-        Caption = 'Codigo'
-      end
       object lblncompañia: TLabel
         Left = 9
         Top = 40
@@ -259,6 +253,13 @@
         Width = 45
         Height = 13
         Caption = 'IBAN/IBC'
+      end
+      object lblcodigo: TLabel
+        Left = 9
+        Top = 16
+        Width = 33
+        Height = 13
+        Caption = 'Codigo'
       end
       object dbedtcodigo: TDBEdit
         Left = 50
@@ -441,6 +442,8 @@
           DataField = 'SIN_IVA'
           DataSource = dmClientes.dsDatos
           TabOrder = 3
+          ValueChecked = '1'
+          ValueUnchecked = '0'
         end
       end
       object dbedtbanco: TDBEdit
@@ -488,6 +491,8 @@
         DataField = 'CON_RE'
         DataSource = dmClientes.dsDatos
         TabOrder = 18
+        ValueChecked = '1'
+        ValueUnchecked = '0'
       end
       object dbedtdpago: TDBEdit
         Left = 404
@@ -502,7 +507,7 @@
   end
   inherited imgImagenes: TImageList
     Bitmap = {
-      494C0101050008001C0120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800200120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000060606074343
@@ -1567,7 +1572,7 @@
   end
   inherited imgImagenesGris: TImageList
     Bitmap = {
-      494C010105000800380120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C0101050008003C0120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000001010101020202037C7C7C889090

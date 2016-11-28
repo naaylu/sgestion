@@ -10,7 +10,6 @@ uses
 
 type
   TfrmClientes = class(TfrmCatalogo)
-    lblcodigo: TLabel;
     dbedtcodigo: TDBEdit;
     lblncompañia: TLabel;
     dbedtncompañia: TDBEdit;
@@ -54,6 +53,7 @@ type
     dbedtIBAN: TDBEdit;
     dbchkfacturA: TDBCheckBox;
     dbchkre: TDBCheckBox;
+    lblcodigo: TLabel;
     procedure actInformeExecute(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
